@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+:root{--ink:#0a2b36;--gold:#c9a46a;--sand:#f4efe7;--cream:#fbfaf7;--muted:#68777b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream)}.hotel-nav{background:rgba(255,255,255,.96);box-shadow:0 2px 18px rgba(10,43,54,.08);padding:14px 0}.brand{display:flex;flex-direction:column;line-height:.85;letter-spacing:.18em;color:var(--ink);font-family:'Playfair Display',serif}.brand span{font-size:1.35rem}.brand small{font-family:'DM Sans';font-size:.55rem;letter-spacing:.45em;margin-top:7px}.nav-link{font-size:.84rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink)!important}.btn-login,.btn-gold{border-radius:0;padding:11px 20px;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}.btn-login{border:1px solid var(--ink);color:var(--ink)}.btn-login:hover{background:var(--ink);color:#fff}.hero{min-height:94vh;background-size:cover;background-position:center;display:flex;align-items:center;color:#fff;padding-top:80px}.hero-content{padding-top:80px}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,6rem);line-height:.98;max-width:900px}.hero .lead{max-width:610px;font-weight:300;margin:25px 0 32px}.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.24em;margin-bottom:18px}.eyebrow.dark{color:#9b7945}.btn-gold{background:var(--gold);border:1px solid var(--gold);color:#fff;padding:14px 26px}.btn-gold:hover{background:#b88f52;border-color:#b88f52;color:#fff}.section-pad{padding:100px 0}.image-frame{position:relative;padding:0 22px 22px 0}.image-frame:after{content:'';position:absolute;right:0;bottom:0;width:80%;height:80%;border:1px solid var(--gold);z-index:-1}.image-frame img{width:100%;height:520px;object-fit:cover}.display-title,.section-title h2,.cta h2{font-family:'Playfair Display',serif;font-size:clamp(2.1rem,4vw,3.5rem)}.body-copy,.section-title>p:last-child{color:var(--muted);line-height:1.8}.text-hotel,.btn-link-hotel{color:#9b7945;text-decoration:none;font-weight:600;border:0;background:none;padding:0}.rooms{background:var(--sand)}.room-card{background:#fff;height:100%;transition:.3s;overflow:hidden}.room-card:hover{transform:translateY(-6px);box-shadow:0 16px 35px rgba(10,43,54,.12)}.room-card img{width:100%;height:280px;object-fit:cover}.room-info{padding:28px}.room-info h3{font-family:'Playfair Display',serif}.room-info p{color:var(--muted)}.services{background:#fff}.service-box{text-align:center;padding:35px 20px;height:100%}.service-box i{font-size:2rem;color:var(--gold)}.service-box h4{font-family:'Playfair Display',serif;margin:18px 0 12px}.service-box p{font-size:.9rem;color:var(--muted)}.gallery-grid{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:260px 260px;gap:16px}.gallery-grid img{width:100%;height:100%;object-fit:cover}.gallery-big{grid-row:1/3}.cta{padding:110px 0;background:linear-gradient(rgba(5,31,43,.78),rgba(5,31,43,.78)),url('./assets/images/hero-playa.jpg') center/cover;color:#fff}footer{background:#071f28;color:#dce3e5}.brand-light{color:#fff}.footer-copy,footer p,footer small{color:#9fb0b5}footer h6{color:var(--gold);letter-spacing:.14em;font-size:.75rem}footer hr{border-color:#496068;margin:30px 0}@media(max-width:991px){.hotel-nav .navbar-collapse{background:#fff;padding:20px}.hero{min-height:80vh}.section-pad{padding:70px 0}.image-frame img{height:380px}}@media(max-width:767px){.gallery-grid{grid-template-columns:1fr;grid-template-rows:auto}.gallery-grid img,.gallery-big{height:260px;grid-row:auto}.hero h1{font-size:3.2rem}.room-card img{height:240px}}
+
+
+.auth-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 31, 43, 0.72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+ 
+.auth-modal{
+    position: relative;
+    width: 90%;
+    max-width: 430px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+ 
+.auth-modal h2{
+    color : var(--ink);
+    margin-bottom: 25px;
+    font-family: 'Playfair Display', serif;
+}
+ 
+.auth-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ 
+.auth-modal input{
+    width: 100%;
+    padding: 12px 15px;
+    border:  1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+ 
+.auth-modal input:focus {
+    border-color: var(--gold);
+}
+ 
+ 
+.auth-modal form button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--gold);
+    color: white;
+    font-weight: 600;
+}
+ 
+.auth-close{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    border: none;
+    background: transparent;
+    font-size: 26px;
+    color: var(--ink);
+    cursor: pointer;
+ 
+}
+ 

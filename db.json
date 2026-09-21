@@ -1,0 +1,31 @@
+{
+    "habitaciones" :[
+        {
+            "id": 1,
+            "nombre": "Habitacion estandar",
+            "descripcion": "Luz natural, estadia tranquila",
+            "precio": 280000,
+            "tipo": "Estandar",
+            "disponible": true
+        },
+              {
+            "id": 2,
+            "nombre": "Habitacion premiun",
+            "descripcion": "Luz natural, terraza , vista al mar",
+            "precio": 420000,
+            "tipo": "Premium",
+            "disponible": true
+        },
+       
+              {
+            "id": 3,
+            "nombre": "Siute Brisa",
+            "descripcion": "Espacios amplios , estadia tranquila, jacuzzi",
+            "precio": 520000,
+            "tipo": "Siute",
+            "disponible": false
+        }
+       
+    ]
+}
+ 
